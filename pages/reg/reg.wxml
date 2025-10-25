@@ -1,0 +1,31 @@
+<!--pages/reg/reg.wxml-->
+<form bindsubmit="reg" class="container">
+<view class="form-item">
+<view><text>*</text>部门</view>
+<picker range="{{aptArr}}" range-key="name" bindchange="getApt">
+    <input type="text" name="regDept" value="{{aptArr[aptIndex].name}}" placeholder="请输入部门" disabled/>
+</picker>
+<view><text></text></view>
+</view>
+<view class="form-item">
+    <view><text>*</text>姓名</view>
+    <input type="text" name="regName" placeholder="请输入姓名" />
+    <view><text></text></view>
+</view>
+<view class="form-item">
+    <view><text>*</text>手机号</view>
+    <input type="text" name="regMobile" placeholder="请输入手机号" bindblur ="validPhone" maxlength="11"/>
+    <view><text></text></view>
+</view>
+<view class="form-item">
+    <view><text>*</text>学号</view>
+    <input type="text" name="regCode" placeholder="请输入学号" />
+    <view><text>0</text>/13</view>
+</view>
+<view class="form-item">
+    <view><text>*</text>密码</view>
+    <input type="text" name="regPassword" placeholder="请输入密码" />
+    <view><text>0</text>/8</view>
+</view>
+<button form-type="submit">提交注册</button>
+</form>

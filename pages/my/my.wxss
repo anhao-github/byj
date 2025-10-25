@@ -1,0 +1,71 @@
+/* pages/my/my.wxss */
+page{
+    background-color: #f2f2f2;
+}
+.userStatus{
+    width: 100%;
+    height: 400rpx;
+    background-color: #0055eb;
+    display: flex;
+    align-items: center;
+}
+.main{
+    width: 600rpx;
+    height: 160rpx;
+    margin-left: 50rpx;
+    display: flex;
+}
+.main .headImg{
+    width: 150rpx;
+    height: 150rpx;
+    border-radius: 50%;
+    background-color: #ffffff;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+.main .headImg image{
+    width: 100rpx;
+    width: 100rpx;
+}
+.loginStatus{
+    width: 450rpx;
+    display: flex;
+    justify-content: center;
+    flex-direction: column;
+    padding: 0 20rpx;
+    box-sizing: border-box;
+    color: #ffffff;
+    font-size: 24rpx;
+}
+.loginStatus navigator:first-child{
+    font-weight: 550;
+    font-size: 44rpx;
+}
+.menu{
+    width: 95%;
+    height: 250rpx;
+    background-color: #ffffff;
+    border-bottom-left-radius: 30rpx;
+    border-top-left-radius: 30rpx;
+}
+.menu menu-item:nth-child(2n+1){
+    border-bottom: 1px solid #eee;
+}
+.menu-item{
+    width: 100%;
+    height: 125rpx;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    padding: 0 30rpx;
+    box-sizing: border-box;
+}
+.menu-item view{
+    display: flex;
+    align-items: center;
+}
+.menu-item image{
+    width: 48rpx;
+    height: 48rpx;
+}

@@ -1,0 +1,26 @@
+<!--pages/deviceList/deviceList.wxml-->
+<view class="container">
+    <view class="search">
+        <image src="/images/fen1.png" mode="" />
+        <input type="text" placeholder="请输入搜索关键词" />
+    </view>
+    <view class="tabBar">
+        <view class="active">全部</view>
+        <view>可借用</view>
+        <view>借用中</view>
+    </view>
+<scroll-view class="list" scroll-y>
+    <view class="list-item" wx:for="{{device}}" data-deviceId="{{item.deviceId}}" bind:tap="link">
+    <image src="/images/microscope.png" mode=""/>
+    <view class="deviceInfo">
+        <view class="deviceName">{{item.deviceName}}</view>
+        <view class="borrowStatus" wx:if="{{item.deviceStatus==0}}"><icon type="warn"></icon>借用中</view>
+        <view class="borrowStatus" wx:if="{{item.deviceStatus==1}}"><icon type="warn"></icon>可借用</view>
+        <view class="borrowStatus" wx:if="{{item.deviceStatus==2}}"><icon type="warn"></icon>维修</view>
+        <view class="borrowStatus" wx:if="{{item.deviceStatus==-1}}"><icon type="warn"></icon>废弃</view>
+
+        <view class="times">更新时间：2025-03-31 18:22:22</view>
+      </view>
+    </view>
+  </scroll-view>
+</view>

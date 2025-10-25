@@ -1,0 +1,17 @@
+<view class="indexTop">
+  <image src="/images/1.png" mode="heightFix" />
+  <view>实验室<text>设备管理</text>小程序</view>
+</view>
+
+<view class="menu">
+  <view class="menuMain">
+    <view bind:tap="link" data-url="../deviceList/deviceList">
+      <image src="/images/wo1.png" mode=""/>
+      设备借用
+    </view>
+    <view bind:tap="link" data-url="../myDevice/myDevice">
+      <image src="/images/wo1.png" mode=""/>
+      设备归还
+    </view>
+  </view>
+</view>

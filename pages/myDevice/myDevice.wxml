@@ -1,0 +1,18 @@
+<!--pages/myDevice/myDevice.wxml-->
+<view class="container">
+  <view class="tabBar">
+    <view class="active">全部</view>
+    <view>借用中</view>
+    <view>已归还</view>
+  </view>
+  <scroll-view class="list" scroll-y >
+    <view class="list-item" wx:for="{{20}}" bind:tap="backDevice">
+      <view class="deviceName">显微镜</view>
+        <view class="borrowStatus"><icon type="warn"></icon>借用中</view>
+        <view class="times">更新时间：2025-03-31 18:22:22</view>
+        <view class="times">归还时间：2025-03-31 18:22:22</view>
+        <view class="times">姓名：张三</view>
+        <view class="times">手机号：13290516102</view>
+    </view>
+  </scroll-view>
+</view>

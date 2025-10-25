@@ -1,0 +1,63 @@
+/* pages/deviceList/deviceList.wxss */
+.container{
+    width: 100%;
+    height: 100vh;
+}
+.search{
+    width: 100%;
+    height: 90rpx;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    padding: 0 50rpx;
+    box-sizing: border-box;
+    background-color: #ffffff;
+}
+.search image{
+    width: 48rpx;
+    height: 48rpx;
+}
+.search input{
+    width: calc(100% - 48rpx);
+    height: 80rpx;
+    padding: 0 20rpx;
+    box-sizing: border-box;
+}
+.tabBar{
+    width: 100%;
+    height: 90rpx;
+    background-color: #ffffff;
+    display: flex;
+    justify-content: space-around;
+    align-items: center;
+}
+.tabBar .active{
+    display: flex;
+    align-items: center;
+    height: 75rpx;
+    border-bottom: 4px solid red;
+}
+.list{
+    width: 100%;
+    height: calc(100vh - 180rpx);
+}
+.list .list-item{
+    width: 95%;
+    height: 230rpx;
+    display: flex;
+    justify-content: space-around;
+    align-items: center;
+    border-radius: 10rpx;
+    background-color: #ffffff;
+}
+.list-item image{
+    width: 200rpx;
+    height: 200rpx;
+}
+.list-item .deviceInfo{
+    width: calc(95% - 200rpx);
+    height: 200rpx;
+    display: flex;
+    flex-direction: column;
+    justify-content: space-around;
+}

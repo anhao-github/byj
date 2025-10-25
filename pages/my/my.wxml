@@ -1,0 +1,35 @@
+<!--pages/my/my.wxml-->
+<view class="userStatus">
+  <view class="main">
+    <view class="headImg">
+      <image src="/images/my.png" mode="" />
+    </view>
+    <view class="loginStatus">
+      {{u.regName}}--{{u.regDept}}
+      <text bind:tap="loginOut">退出</text>
+    </view>
+    <!-- 
+       <view class="loginStatus">
+      <navigator url="../login/login">登陆/注册</navigator>
+      <text>注册成功后,使用更多功能！</text>
+    </view>
+     -->
+  </view>
+</view>
+
+<view class="menu">
+  <view class="menu-item" bind:tap="link">
+    <view>
+      <image src="/images/home.png" mode="" />
+      我的借用记录
+    </view>
+    <image src="/images/arrow.png" mode=""/>
+  </view>
+  <view class="menu-item">
+    <view>
+      <image src="/images/home.png" mode="" />
+      关于
+    </view>
+    <image src="/images/arrow.png" mode=""/>
+  </view>
+</view>

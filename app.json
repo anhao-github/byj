@@ -1,0 +1,52 @@
+{
+    "pages": [
+        "pages/index/index",
+        "pages/login/login",
+        "pages/reg/reg",
+        "pages/deviceList/deviceList",
+        "pages/myDevice/myDevice",
+        "pages/deviceDetail/deviceDetail",
+        "pages/borrow/borrow",
+        "pages/my/my"
+        
+    ],
+    "window": {
+        "navigationBarBackgroundColor": "#0055EB",
+        "navigationBarTitleText": "便易借",
+        "navigationBarTextStyle": "white",
+        "navigationStyle": "default"
+    },
+    "tabBar": {
+        "color": "#333",
+        "selectedColor": "#0055eb",
+        "list": [
+            {
+                "pagePath": "pages/index/index",
+                "text": "首页",
+                "iconPath": "/images/fen1.png",
+                "selectedIconPath": "/images/fen2.png"
+            },
+            {
+                "pagePath": "pages/my/my",
+                "text": "我的",
+                "iconPath": "/images/wo1.png",
+                "selectedIconPath": "/images/wo2.png"
+            }
+        ]
+    },
+    "style": "v2",
+    "renderer": "webview",
+    "rendererOptions": {
+        "skyline": {
+            "defaultDisplayBlock": true,
+            "defaultContentBox": true,
+            "tagNameStyleIsolation": "legacy",
+            "disableABTest": true,
+            "sdkVersionBegin": "3.0.0",
+            "sdkVersionEnd": "15.255.255"
+        }
+    },
+    "componentFramework": "glass-easel",
+    "sitemapLocation": "sitemap.json",
+    "lazyCodeLoading": "requiredComponents"
+}

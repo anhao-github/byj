@@ -1,0 +1,11 @@
+<!--pages/deviceDetail/deviceDetail.wxml-->
+<view class="deviceDetail">
+    <view class="title">{{d.deviceName}}</view>
+    <view class="classify">{{d.deviceModel}}}</view>
+    <image src="/images/microscope.png" mode="" />
+    <view class="detail">{{d.deviceRemark}}</view>
+</view>
+<view class="btn" wx:if="{{d.deviceStatus==0}}">借用中</view>
+<view class="btn" bind:tap="link" wx:if="{{d.deviceStatus==1}}">可借用</view>
+<view class="btn" wx:if="{{d.deviceStatus==2}}">维修</view>
+<view class="btn" wx:if="{{d.deviceStatus==-1}}">废弃</view>

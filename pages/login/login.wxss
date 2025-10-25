@@ -1,0 +1,38 @@
+/* pages/login/login.wxss */
+page{
+background-color: #f2f2f2;
+}
+.loginForm{
+display: block;
+width: 95%;
+margin: 20rpx auto;
+}
+.form-item{
+    width: 100%;
+    height: 88rpx;
+    background-color: #fff;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    border-bottom: 1rpx solid #eeeeee;
+    padding: 0 20rpx;
+    box-sizing: border-box;
+}
+.form-item view{
+    width: 130rpx;
+}
+.form-item view:first-child text,
+.form-item view:last-child text,
+.goReg navigator
+{
+    color: red;
+}
+.form-item input{
+    width: 100%;
+}
+.goReg{
+    width: 300rpx;
+    display: flex;
+    margin: 25rpx auto;
+    text-align:center ;
+}
